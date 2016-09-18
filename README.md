@@ -1,5 +1,6 @@
 # LEMO
 Linked List Emulator
+DEMO : www.amskee.netne.net/LEMO/LEMO.php
 
 **// Amskee //**
 
