@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Structures Algorithms and Visualization</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="js/core/listCore.js"></script>
+    <script src="js/core/model.js"></script>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+
+    <div class="container">
+    
+    <header>
+      <div class="row">
+        <div class="col-md-6 text-uppercase">
+          <h3 class="title-super text-thin">Linked List</h3>
+          <h3>Data Structures</h3>
+        </div>
+        <div class="col-md-6">
+          <img src="img/work-logo.png" alt="logo" class="img-responsive title-logo"/>
+        </div>
+      </div>
+    </header>
+    
+    <div class="row">
+      
+      <div class="col-md-3 app-sidebar">
+        <div class="row">
+          <form class="app-ide"> 
+            <div class="form-group">
+              <label for="insert">Insert Elements</label><br>
+              <input type="text" class="form-control" id="v1" placeholder="Element Value">
+              <button type="button" class="btn btn-primary" id="b1" onclick="update(1);">Insert First</button>
+              <button type="button" class="btn btn-primary" onclick="update(3);">Insert Last</button>
+            </div>
+            <div class="form-group">
+              <label for="insertAfter">Insert After</label><br>
+              <input type="text" class="form-control" id="v2" placeholder="Element Value">
+              <input type="text" class="form-control" id="v3" placeholder="Insert After this value">
+              <button type="button" class="btn btn-primary" onclick="update(5);">Insert After</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="row">
+          <form class="app-ide"> 
+            <div class="form-group">
+              <label for="insert">Delete Elements</label><br>
+              <button type="button" class="btn btn-primary" onclick="update(2);">Delete First</button>
+              <button type="button" class="btn btn-primary" onclick="update(4);">Delete Last</button>
+            </div>
+          </form>
+        </div>
+        <div class="row app-info">
+          <div class="alert alert-warning alert-dismissable" role="alert" id="animation-warn">
+            <strong class="app-strong">We are still testing.</strong> Currently the animations work for fewer than 5 Nodes. 
+          </div>
+          <div class="alert alert-info" role="alert">
+            <strong class="app-strong">We are still in beta version!</strong> Currently animations are enabled only for Insert First Operation.
+          </div>
+        </div>
+        <!--sidebar ends here-->
+      </div>
+
+
+      <div class="col-md-9">
+        <div class="row app-screen">
+          <div class="app-row screen-pointers" id="pointers-block">
+            <div class="pointer-holder">
+              <div class="pointer-block" id="pBlock1"></div>
+              <div class="pointer-block" id="pBlock2"></div>
+            </div>  
+          </div>
+          <div class="app-row screen-main" id="main-block"></div>
+          <div class="app-row screen-extras" id="extras-block">
+            <div class="extras-holder" id="eHolder"></div>
+          </div>
+          <div class="app-row screen-algo">
+            <div class="algo-holder" id="algo-block">
+              <div class="algo-head">Algorithm: </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="app-footer">
+        <p class="portfolio-footer text-center">Made by Amrish | Motivation: A.M Abirami</p>
+        <p class="portfolio-footer text-center">Thiagarajar College of Engineering</p>
+      </div>
+    </footer>
+    <script src="js/core/view.js"></script>
+  </body>
+</html>

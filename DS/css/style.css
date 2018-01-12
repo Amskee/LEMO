@@ -1,0 +1,55 @@
+body {
+	font-family: "Lato", sans-serif;
+	color: #747784;
+	font-weight: 300;	
+}
+
+
+img {
+	margin: 0 auto;
+}
+
+
+a {
+	font-size: 20px;
+}
+
+
+.text-thin {
+	font-weight: 100;
+}
+
+
+.text-muted {
+	color: #bcbbbb;
+}
+
+
+.title-super {
+	font-size: 60px;
+}
+
+
+.title-logo {
+	margin-top: 20px;
+	width: 20%;
+	float: right;
+}
+
+
+.portfolio-footer {
+	margin: 20px auto;
+}
+
+
+.app-sidebar {
+}
+
+
+.app-ide {
+	margin: 0 auto;
+}
+
+button {
+	margin: 5px 0;
+}

@@ -1,0 +1,39 @@
+<html>
+<body>
+<script src="listCore.js"></script>
+<input type="text" id="v1"><br>
+<input type="text" id="v2"><br>
+<button onclick="update(0);">Display</button>
+<button onclick="update(1);">Insert First</button>
+<button onclick="update(2);">Delete First</button>
+<button onclick="update(3);">Insert Last</button>
+<button onclick="update(4);">Delete Last</button>
+<button onclick="update(5);">Insert After</button>
+<button onclick="update(6);">Delete</button>
+<button onclick="update(7);">Delete All</button>
+<script>
+	var ml = new list();
+	var mxl = 4;
+	var update = function(opt) {
+		var v1 = document.querySelector("#v1").value;
+		var v2 = document.querySelector("#v2").value;
+		var v3 = document.querySelector("#v3").value;
+		if (ml.len()==mxl) lsFull();
+		switch(opt) {
+			case 0: ml.display(); break;
+			case 1: ml.insertFirst(v1); break;
+			case 2: ml.deleteFirst(); break;
+			case 3: ml.insertLast(v1); break;
+			case 4: ml.deleteLast(); break;
+			case 5: ml.insertAfter(v1, v2); break;
+			case 6: ml.delete(v1); break;
+			case 7: ml.deleteAll(); break;
+			default: alert('Update failed');
+		}
+	};
+	var lsFull = function() {
+		console.log("Max allowed list length reached.");
+	};
+</script>
+</body>
+</html>
